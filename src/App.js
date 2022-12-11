@@ -1,7 +1,12 @@
+import MainRoutes from "./routes/MainRoutes";
+import "./styles/main.scss";
+import UserProvider from "./context/UserContext";
 function App() {
   return (
     <>
-      <h1>App</h1>
+      <UserProvider>
+        <MainRoutes />
+      </UserProvider>
     </>
   );
 }
